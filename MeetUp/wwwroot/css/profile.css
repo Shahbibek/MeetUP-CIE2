@@ -1,0 +1,253 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-section {
+    color: #fff;
+    padding: 30px 0;
+    padding-bottom: 20px;
+    margin: 20px;
+    font-family: 'Istok Web', 'Roboto';
+    background-color: #679C98;
+}
+
+.profile-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.pro-heading {
+    background-color: #1C4F49;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #FF7B36;
+    font-family: "Itim";
+    font-size: 36px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.profile-col-1 {
+    flex: 00 30%;
+    /* max-width: 50%; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-col-2 {
+    flex: 00 60%;
+    /* max-width: 50%; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-col {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.pro-details {
+    /* width: 60%; */
+    border-right: 2px solid #1C4F49;
+    margin-bottom: 20px;
+}
+
+.profile-col-1 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    border: 2px solid #FF5E34;
+}
+
+.dname {
+    font-family: "Itim";
+    font-size: 30px;
+    color: #1C4F49;
+}
+
+.emailtxt,
+.mobnotxt {
+    font-family: "Itim";
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+.btn-sec {
+    margin-top: 30px;
+}
+
+    .btn-sec button {
+        width: 80%;
+        padding: 5px;
+        margin-bottom: 4px;
+        border: none;
+        color: #fff;
+        background-color: #3F7B76;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+        .btn-sec button:hover {
+            color: #FF5E34;
+        }
+
+.inner-container {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.appointment_form {
+    font-family: "Itim";
+    font-size: 22px;
+    color: #2D2D2D;
+}
+
+.mbl-no {
+    margin-left: 10px;
+    background-color: #679C98;
+    border: 2px solid #2D2D2D;
+    border-radius: 5PX;
+    color: #2D2D2D;
+    height: 30px;
+    width: 300px;
+    font-family: "Itim";
+    font-size: 18px;
+    padding-left: 7px;
+    outline: none;
+    margin-bottom:10px;
+}
+
+.submit-btn {
+    padding-left: 20px;
+}
+
+    .submit-btn button {
+        border: none;
+        color: #fff;
+        height: 35px;
+        width: 150px;
+        border-radius: 10px;
+        font-family: "Itim";
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+.edit-btn {
+    background-color: #FF7B36;
+}
+
+.save-btn {
+    background-color: #1C5C55;
+}
+
+::placeholder {
+    color: #2D2D2D;
+}
+
+.appoint_tbl {
+    font-family: "Istok Web";
+}
+
+    .appoint_tbl td {
+        border: none;
+    }
+
+.tbl-col-1 {
+    color: #fff;
+}
+
+.tbl-thead {
+    color: #2D2D2D;
+    border: none;
+}
+
+.accepted-col {
+    color: #026F00;
+}
+
+.rejected-col {
+    color: #D40000;
+}
+
+.pending-col {
+    color: #505050;
+}
+
+.cancle-bt {
+    border: none;
+    color: #fff;
+    background-color: #B46C00;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.print-btn {
+    border: none;
+    background-color: #1C4F49;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+    .print-btn img {
+        height: 18px;
+        width: 18px;
+    }
+
+.tbl-head {
+    background-color: #1C5C55;
+    font-family: "Itim";
+    font-size: 24px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*=========== Responsive section ============*/
+
+@media (max-width: 767px) {
+    .profile-section {
+        margin: 10px;
+    }
+
+    .profile-col-1,
+    .profile-col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .pro-details {
+        border: none;
+        width: auto;
+    }
+
+    .submit-btn {
+        text-align: center;
+    }
+
+    .inner-container {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .mbl-no {
+        width: 200px;
+    }
+}

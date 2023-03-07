@@ -1,0 +1,104 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    align-content: center;
+}
+
+.container {
+    width: 100%;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    /*margin-top: 30px;*/
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: #679C98;
+    text-align: center;
+}
+
+.heading {
+    background-color: #1C4F49;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    color: #FF7B36;
+    font-family: "Itim";
+    font-size: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+.desc {
+    padding-top: 20px;
+    font-family: "Istok Web";
+    font-size: 24px;
+    color: #2D2D2D;
+}
+
+.mbl-no {
+    height: 40px;
+    width: 370px;
+    border: 2px solid #2D2D2D;
+    border-radius: 10px;
+    background-color: #679C98;
+    font-size: 24px;
+    padding-left: 10px;
+    color: #2D2D2D;
+    font-family: "Itim";
+    outline: none;
+}
+
+.submit-btn {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+.submit-btn-button {
+    height: 40px;
+    width: 250px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background-color: #FF7B36;
+    font-family: "Itim";
+    font-size: 24px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #2D2D2D;
+}
+
+/*=========== book appointment ============*/
+
+.appointment_form {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+    .appointment_form table {
+        font-family: "Itim";
+        font-size: 28px;
+        color: #2D2D2D;
+    }
+
+    .appointment_form td {
+        padding: 6px;
+    }
+
+    .appointment_form input, .appointment_form select {
+        border-radius: 5px;
+    }
+
+/*    .appointment_form select {
+        width: 386px;
+    }*/
+
+.recapcha {
+    padding-top: 20px;
+}

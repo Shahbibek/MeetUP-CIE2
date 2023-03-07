@@ -1,0 +1,97 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    font-family: Istok Web;
+    background: rgba(184,218,215,1);
+}
+
+.container {
+    margin-top:50px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    color: rgba(28,79,73,1);
+    font-family: Fruktur;
+    font-size: 54px;
+}
+
+.tag-line {
+    color: rgba(28,79,73,1);
+    font-size: 16px;
+}
+
+.pdf-section {
+    width: auto;
+    height: auto;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.sec-head {
+    font-size: 24px;
+    text-align: left;
+}
+
+.attribute-name {
+    font-size: 16px;
+    text-align: left;
+}
+
+.attribute-item {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.pdf-footer {
+    height: 60px;
+    margin-top:50px;
+    color: #B0B0B0;
+    display: flex;
+    align-items: center;
+    background-color: #272727;
+}
+
+.copyright {
+    position: relative;
+    left: 50px;
+    font-family: "Istok Web";
+    font-size: 14px;
+}
+
+.follow {
+    position: absolute;
+    right: 50px;
+    border-left: 5px solid #FF5E34;
+    padding-left: 10px;
+    font-family: "Istok Web";
+}
+
+    .follow span {
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+.social-ic img {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+}

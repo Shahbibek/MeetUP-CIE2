@@ -1,0 +1,175 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: auto;
+    width: auto;
+    margin: 20px;
+    background-image: url("../images/bg_main.png");
+    background-position: top;
+    background-color: #86BFBA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.logo {
+    margin-left: 85%;
+    /* margin-right: 5%; */
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+    align-content: flex-end;
+    /* min-height: 100vh; */
+    justify-content: center;
+}
+
+.form_box {
+    overflow: hidden;
+    transform: translateX(-60px);
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background: #1C4F49;
+    height: 700px;
+    width: 545px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.input_form {
+    height: 100%;
+    padding: 50px;
+}
+
+.lock_icon {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.form_heading {
+    margin-top: 20px;
+    color: rgba(255,255,255,1);
+    font-family: Itim;
+    font-size: 40px;
+    opacity: 1;
+    text-align: center;
+}
+
+.form_desc {
+    margin-top: 12px;
+    color: rgba(176,176,176,1);
+    font-family: Roboto;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+
+.email_box {
+    width: 100%;
+    height: 75px;
+    margin-top: 55px;
+    text-align: center;
+    background-size: cover;
+    opacity: 1;
+    overflow: hidden;
+}
+
+::placeholder {
+    color: rgba(176, 176, 176, 1);
+}
+
+
+.input_email {
+    width: 368px;
+    height: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    color: rgba(176,176,176,1);
+    font-family: Itim;
+    font-size: 24px;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(28,79,73,1);
+    border: 2px solid rgba(176,176,176,1);
+    outline: none;
+}
+
+.btn_box {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    border: none;
+    overflow: hidden;
+}
+
+.reset_btn {
+    width: 368px;
+    height: 100%;
+    color: rgba(255,255,255,1);
+    font-size: 30px;
+    font-family: itim;
+    background: rgba(255,122,53,1);
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer_link {
+    margin-top: 35px;
+}
+
+.back_login {
+    width: 368px;
+    color: rgba(255,122,53,1);
+    font-family: Itim;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.back_arrow {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: #FF7B36;
+}
+
+.error_text {
+    margin-left: 40px;
+    margin-top: 2px;
+    color: #D8D8D8;
+    display: flex;
+    align-items: flex-start;
+}
+
+.valid_email {
+    margin-left: -60px;
+}
