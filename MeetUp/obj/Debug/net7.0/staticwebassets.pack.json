@@ -1,0 +1,449 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MeetUp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MeetUp.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\about_us.css",
+      "PackagePath": "staticwebassets\\css\\about_us.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\appoint_pdf.css",
+      "PackagePath": "staticwebassets\\css\\appoint_pdf.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\details_popup.css",
+      "PackagePath": "staticwebassets\\css\\details_popup.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\forgot_pass1.css",
+      "PackagePath": "staticwebassets\\css\\forgot_pass1.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\forgot_pass2.css",
+      "PackagePath": "staticwebassets\\css\\forgot_pass2.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\multiview.css",
+      "PackagePath": "staticwebassets\\css\\multiview.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\page_not_found.css",
+      "PackagePath": "staticwebassets\\css\\page_not_found.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\Amit sir.png",
+      "PackagePath": "staticwebassets\\img\\Amit sir.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\Bhoomi mam.png",
+      "PackagePath": "staticwebassets\\img\\Bhoomi mam.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\Logo.png",
+      "PackagePath": "staticwebassets\\img\\Logo.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\Paresh sir.png",
+      "PackagePath": "staticwebassets\\img\\Paresh sir.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\Profile photo.jpg",
+      "PackagePath": "staticwebassets\\img\\Profile photo.jpg"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\appointment .png",
+      "PackagePath": "staticwebassets\\img\\appointment .png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\appointment-booking.png",
+      "PackagePath": "staticwebassets\\img\\appointment-booking.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\appointment_pic.png",
+      "PackagePath": "staticwebassets\\img\\appointment_pic.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\back_orange.png",
+      "PackagePath": "staticwebassets\\img\\back_orange.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\banner_bg_1.png",
+      "PackagePath": "staticwebassets\\img\\banner_bg_1.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\banner_bg_2.png",
+      "PackagePath": "staticwebassets\\img\\banner_bg_2.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\bg.png",
+      "PackagePath": "staticwebassets\\img\\bg.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\bg_main.png",
+      "PackagePath": "staticwebassets\\img\\bg_main.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\bibek.jpeg",
+      "PackagePath": "staticwebassets\\img\\bibek.jpeg"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\close.png",
+      "PackagePath": "staticwebassets\\img\\close.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\corner.png",
+      "PackagePath": "staticwebassets\\img\\corner.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\facebook_icon.png",
+      "PackagePath": "staticwebassets\\img\\facebook_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\facebook_icon_abt.png",
+      "PackagePath": "staticwebassets\\img\\facebook_icon_abt.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\footer_bg_1.png",
+      "PackagePath": "staticwebassets\\img\\footer_bg_1.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\footer_bg_2.png",
+      "PackagePath": "staticwebassets\\img\\footer_bg_2.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\github_icon.png",
+      "PackagePath": "staticwebassets\\img\\github_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\github_icon_abt.png",
+      "PackagePath": "staticwebassets\\img\\github_icon_abt.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\heroicons_bars-3.png",
+      "PackagePath": "staticwebassets\\img\\heroicons_bars-3.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\heroicons_bars-3.svg",
+      "PackagePath": "staticwebassets\\img\\heroicons_bars-3.svg"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\instagram_icon.png",
+      "PackagePath": "staticwebassets\\img\\instagram_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\instagram_icon_abt.png",
+      "PackagePath": "staticwebassets\\img\\instagram_icon_abt.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\line_icon.png",
+      "PackagePath": "staticwebassets\\img\\line_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\lock_icon.png",
+      "PackagePath": "staticwebassets\\img\\lock_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\message_icon.png",
+      "PackagePath": "staticwebassets\\img\\message_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\print_icon.png",
+      "PackagePath": "staticwebassets\\img\\print_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\profile_pic_bg.png",
+      "PackagePath": "staticwebassets\\img\\profile_pic_bg.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\search_icon.png",
+      "PackagePath": "staticwebassets\\img\\search_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\time.webp",
+      "PackagePath": "staticwebassets\\img\\time.webp"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\js\\style.js",
+      "PackagePath": "staticwebassets\\js\\style.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MeetUp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MeetUp.props",
+      "PackagePath": "build\\MeetUp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MeetUp.props",
+      "PackagePath": "buildMultiTargeting\\MeetUp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MeetUp.props",
+      "PackagePath": "buildTransitive\\MeetUp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

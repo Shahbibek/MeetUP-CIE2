@@ -13,6 +13,18 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// 404 page not found error handling start
+app.Use(async (context, next) =>
+{
+    await next();
+    if (context.Response.StatusCode == 404)
+    {
+        context.Request.Path = "/Home/Error";
+        await next();
+    }
+});
+// 404 page not found error handling end
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
