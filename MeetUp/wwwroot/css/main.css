@@ -100,7 +100,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url('../img/banner_bg_1.png');
+    background-image: url("../img/banner_bg_1.png");
     background-repeat: no-repeat;
     /* background-position-y: -20px ; */
 }
@@ -163,7 +163,7 @@ a:hover {
 
 .banner-bg {
     margin-top: -15px;
-    background-image: url(/img/banner_bg_2.png);
+    background-image: url("../img/banner_bg_2.png");
     background-repeat: no-repeat;
 }
 
@@ -402,7 +402,7 @@ a:hover {
     }
 
 .footer-left-bg {
-    background-image: url(/img/footer_bg_1.png);
+    background-image: url("../img/footer_bg_1.png");
     background-repeat: no-repeat;
     /* background-position-y: -20px ; */
 }
@@ -410,7 +410,7 @@ a:hover {
 
 .footer-bg {
     margin-top: -35px;
-    background-image: url(/img/footer_bg_2.png);
+    background-image: url("../img/footer_bg_2.png");
     background-repeat: no-repeat;
 }
 

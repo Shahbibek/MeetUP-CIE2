@@ -1,0 +1,72 @@
+﻿@model MeetUp.Models.Users;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html5>
+        <head>
+        <title>Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Fruktur&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" rel="stylesheet" />
+        <link href="~/css/login.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="logo">
+            <a href="@Url.Action("Index", "Home")"><img src="~/img/Logo.png"></a>
+        </div>
+        <div class="box_main">
+            <div class="corner">
+                <img src="~/img/corner.png">S
+            </div>
+            <div class="container">
+                <div class="banner">
+                    <div class="heading_txt">
+                        <span class="txt_get_your">Get your </span>
+                        <span class="txt_appointment">Appointment</span>
+                        <span class="txt_now">Now...</span>
+                    </div>
+                    <div class="img_box"></div>
+                </div>
+                <div class="form_box">
+                    <form class="input_form" id="MyForm">
+                        <div class="intro">
+                            <span class="form_heading">Login</span>
+                            <p class="form_desc">
+                                Welcome back!
+                                Login with your data that you entered during registration .
+                            </p>
+                        </div>
+                        <div class="input_box">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "input_email", @type="email", @placeholder = "Please Enter Email"});
+                            <div class="error_text">
+                                
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            @Html.TextBoxFor(m => m.Password, new { @class = "input_password", @type="password", @placeholder = "Please Enter Password"});
+                            <div class="error_text">
+                                
+                            </div>
+                        </div>
+                        <div class="uppr_footer">
+                            <input type="checkbox" class="checkbox">
+                            <span class="remember_txt">Keep me logged in</span>
+                            <a class="forgot_pass" href="@Url.Action("ForgetPassword", "User")">Forgot Password ?</a>
+                        </div>
+                        <div class="btn_box">
+                            <button class="login_btn" id="booking_btn">Login</button>
+                        </div>
+                        <div class="footer_link">
+                            <a class="new_account" href="@Url.Action("Register","User")"> Create new account ?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    </body>

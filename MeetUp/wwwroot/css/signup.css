@@ -8,7 +8,7 @@ body {
     height: auto;
     width: auto;
     margin: 20px;
-    background-image: url("../images/bg_main.png");
+    background-image: url("../img/bg_main.png");
     background-position: top;
     background-color: #86BFBA;
     display: flex;
@@ -201,7 +201,7 @@ a:hover {
 .img_box {
     width: 439px;
     height: 440px;
-    background: url("../images/appointment_pic.png");
+    background: url("../img/appointment_pic.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

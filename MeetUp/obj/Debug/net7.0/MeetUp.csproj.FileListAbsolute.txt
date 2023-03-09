@@ -245,3 +245,10 @@ E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\re
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.pdb
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.genruntimeconfig.cache
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\ref\MeetUp.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.Mvc.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.Razor.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.Helpers.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.WebPages.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll

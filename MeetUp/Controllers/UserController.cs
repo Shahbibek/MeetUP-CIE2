@@ -4,6 +4,7 @@ using System.Diagnostics;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using System.Net.Http.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace MeetUp.Controllers
 {
@@ -17,8 +18,7 @@ namespace MeetUp.Controllers
         {
             _logger = logger;
         }
-
-        [HttpPost]
+        
         public async Task<ActionResult<string>> UserRegister(Users users)
         {
             //IList<Users> user = new List<Users>();
@@ -60,11 +60,18 @@ namespace MeetUp.Controllers
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Login()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
+        public IActionResult Register()
+        {
+            return View();
+        }
+        public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+
     }
 }

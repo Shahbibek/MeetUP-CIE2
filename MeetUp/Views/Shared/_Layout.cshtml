@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <title>Meet UP</title>
     <link href="https://fonts.googleapis.com/css?family=Fruktur&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
@@ -44,9 +45,8 @@
                             </button>
                         </div>
                         <div>
-                               @*<button class="login_btn" id="login_btn" runat="server" onclick="btn_login">Login</button>*@
-@*                            <asp:Button ID="login_button" class="login_btn" runat="server" Text="Logout" OnClick="login_btn_Click" />
-*@                        </div>
+                            <button class="login_btn" id="booking_btn" onclick="window.location.href ='@Url.Action("Login", "User")';">Login</button>
+                        </div>
                     </div>
                 </div>
             </nav>
