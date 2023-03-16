@@ -1,7 +1,12 @@
+using MeetUp.Interfaces;
+using Refit;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Api Connection String BaseURL
+//builder.Services.AddRefitClient<IApiConnection>().ConfigureHttpClient(c=>c.BaseAddress = new Uri("http://shikatmahmud-001-site1.etempurl.com/api/"));
 
 var app = builder.Build();
 

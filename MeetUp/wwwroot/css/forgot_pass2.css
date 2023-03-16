@@ -8,7 +8,7 @@ body {
     height: auto;
     width: auto;
     margin: 20px;
-    background-image: url("../images/bg_main.png");
+    background-image: url("../img/bg_main.png");
     background-position: top;
     background-color: #86BFBA;
     display: flex;

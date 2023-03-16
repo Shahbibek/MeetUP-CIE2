@@ -33,7 +33,7 @@
                     <div class="img_box"></div>
                 </div>
                 <div class="form_box">
-                    <form class="input_form" id="MyForm" runat="server" >
+                    <form class="input_form" method="post" asp-action="Register">
                         <div class="intro">
                             <span class="form_heading">Register now</span>
                             <p class="form_desc">Give your information for register.</p>
@@ -41,35 +41,35 @@
                         <div class="input_box">                            
                             @Html.TextBoxFor(m => m.FName, new { @class = "input_fName", @type="text", @placeholder = "First Name"});
                             <div class="error_text">
-                                
+                                <span asp-validation-for="FName" style="color:red"></span>
                             </div>
                         </div>
                         <div class="input_box">                            
                             @Html.TextBoxFor(m => m.LName, new { @class = "input_lName", @type="text", @placeholder = "Last Name"});
                             <div class="error_text">
-                                
+                                <span asp-validation-for="LName" style="color:red"></span>
                             </div>
                         </div>
                         <div class="input_box">                            
-                            @Html.TextBoxFor(m => m.Email, new { @class = "input_email", @type="email", @placeholder = "Enter Email"});
+                            @Html.TextBoxFor(m => m.Email, new { @class = "input_email", @type="text", @placeholder = "Enter Email"});
                             <div class="error_text">
-                                
+                                <span asp-validation-for="Email" style="color:red"></span>
                             </div>
                         </div>
                         <div class="input_box">                            
                             @Html.TextBoxFor(m => m.Password, new { @class = "input_password", @type="password", @placeholder = "Enter Password"});
                             <div class="error_text">
-                               
+                                <span asp-validation-for="Password" style="color:red"></span>
                             </div> 
                         </div>
                         <div class="input_box">                            
                             @Html.TextBoxFor(m => m.CNFPassword, new { @class = "input_cPassword", @type="password", @placeholder = "Enter Confirm Password"});
                             <div class="error_text">
-                                
+                                <span asp-validation-for="CNFPassword" style="color:red"></span>
                             </div>
                         </div>
                         <div class="btn_box">
-                            <button class="register_btn" id="register_btn">Register</button>
+                            <button type="submit" class="register_btn" value="SUBMIT" id="register_btn">Register</button>
                         </div>
                         <div class="txt_have_acc">
                         </div>
@@ -83,3 +83,7 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
     </body>
+
+@section scripts{
+@{ await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");}
+}

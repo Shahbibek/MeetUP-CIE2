@@ -5,55 +5,24 @@ using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using System.Net.Http.Json;
 using Newtonsoft.Json.Serialization;
+using MeetUp.Interfaces;
+using System.Text;
+using System.Net.Http.Headers;
 
 namespace MeetUp.Controllers
 {
     public class UserController : Controller
     {
         private readonly ILogger<UserController> _logger;
-
-        String BaseURL = "http://shikatmahmud-001-site1.etempurl.com/api/Authentication/";
+        //private readonly IApiConnection _apiConnection;
+        //IApiConnection apiConnection
+        private String BaseUrl = "http://shikatmahmud-001-site1.etempurl.com/";
+ 
 
         public UserController(ILogger<UserController> logger)
         {
             _logger = logger;
-        }
-        
-        public async Task<ActionResult<string>> UserRegister(Users users)
-        {
-            //IList<Users> user = new List<Users>();
-            Users obj = new Users()
-            {
-                Email = users.Email,
-                FName = users.FName,
-                LName = users.LName,
-                Password = users.Password,
-                CNFPassword = users.Password,
-
-            };
-            if(users.Email != null)
-            {
-                using (var client = new HttpClient())
-                {
-                    client.BaseAddress = new Uri(BaseURL);
-                    client.DefaultRequestHeaders.Accept.Clear();
-                    client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                    HttpResponseMessage Result = await client.PostAsJsonAsync <Users>("RegisterUser",obj);
-                    if (Result.IsSuccessStatusCode)
-                    {
-                        return Ok(Result);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Error calling web Api");
-                    }
-
-                }
-                
-            }
-
-            return View();
-
+            //_apiConnection = apiConnection;
         }
 
         public IActionResult Index()
@@ -66,9 +35,54 @@ namespace MeetUp.Controllers
         }
         public IActionResult Register()
         {
-            return View();
+            Users user = new Users();
+            return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(Users model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {   
+                    using(var client=new HttpClient())
+                    {
+                        client.BaseAddress = new Uri(BaseUrl);
+                        client.DefaultRequestHeaders.Accept.Clear();
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        var data = JsonConvert.SerializeObject(model);
+                        var RegisterData = new StringContent(data, Encoding.UTF8, "application/json");
+                        HttpResponseMessage response = await client.PostAsync("api/Authentication/RegisterUser", RegisterData);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            TempData["success"] = response.Content.ReadAsStringAsync().Result;
+                        }
+                        else
+                        {
+                            TempData["error"] = response.Content.ReadAsStringAsync().Result;  
+                        }
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "ModelState is not valid!!");
+                    return View(model);
+                }
+            }
+            catch (Exception )
+            {
+                throw;
+            }
+            return RedirectToAction("Login");
+
         }
         public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+        public IActionResult ForgetPasswordLink()
         {
             return View();
         }

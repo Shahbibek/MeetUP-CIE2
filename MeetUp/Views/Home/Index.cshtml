@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<MeetUp.Models.Faculty>
+@{
     ViewData["Title"] = "Meet UP";
 }
 
@@ -31,6 +32,7 @@
 </section>
 
 <!-- end banner section -->
+
 <!-- start section-2 -->
 
 <section class="section-2">
@@ -67,6 +69,7 @@
 </section>
 
 <!-- end section-2 -->
+
 <!-- start emp section -->
 
 <section class="emp-sec">
@@ -77,25 +80,38 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="border-box"></div>
-                <div class="emp-box">
-                    <div class="img-box">
-                        <img src="~/img/Amit sir.png" alt="Dr. Amit Lathigara">
+            @if (Model.Count() > 0)
+            {
+                @foreach(var d in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="border-box"></div>
+                        <div class="emp-box">
+                            <div class="img-box">
+                                <img src="@d.ProfileUrl" alt="Dr. Amit Lathigara">
+                            </div>
+                            <div class="name-box">
+                                <span><b>@d.Name</b></span>
+                            </div>
+                            <div class="desc-box">
+                                <span>@d.Designation</span>
+                                <span>@d.School</span>
+                                <span>@d.Institute</span>
+                                <span>@d.Place</span>
+                                <span class="details-btn"><a href="#">See Details</a></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="name-box">
-                        <span><b>Dr. Amit Lathigara</b></span>
-                    </div>
-                    <div class="desc-box">
-                        <span>Dean / Director</span>
-                        <span>School of Engineering</span>
-                        <span>RK University</span>
-                        <span>Rajkot, Gujarat</span>
-                        <span class="details-btn"><a href="#">See Details</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
+                }
+            }
+            else
+            {
+                <tr class="text-center">
+                    <td colspan="8"><h2 class="text-warning bg-info">No Record</h2></td>
+                </tr>
+            }
+            
+            @*<div class="col-md-4">
                 <div class="border-box"></div>
                 <div class="emp-box">
                     <div class="img-box">
@@ -130,7 +146,7 @@
                         <span class="details-btn"><a href="#">See Details</a></span>
                     </div>
                 </div>
-            </div>
+            </div>*@
         </div>
     </div>
 </section>

@@ -252,3 +252,17 @@ E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\Sy
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\System.Web.WebPages.dll
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\Refit.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\Refit.HttpClientFactory.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\Refit.Newtonsoft.Json.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\Google.Protobuf.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\K4os.Hash.xxHash.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\MySql.Data.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\BouncyCastle.Crypto.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
