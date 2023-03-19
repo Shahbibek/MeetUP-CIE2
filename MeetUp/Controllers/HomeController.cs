@@ -6,6 +6,10 @@ using System.Text;
 using Newtonsoft.Json;
 using System.Net.Http.Json;
 using Newtonsoft.Json.Serialization;
+using System.Data;
+using System.Web.Helpers;
+using Org.BouncyCastle.Ocsp;
+using System.Collections;
 
 namespace MeetUp.Controllers
 {
@@ -22,31 +26,35 @@ namespace MeetUp.Controllers
         public IActionResult Index()
         {
             List<Faculty> data = new List<Faculty>();
+            //Faculty data = new Faculty();
             try
-            {   
-                using(HttpClient client = new HttpClient())
+            {
+                using (HttpClient client = new HttpClient())
                 {
                     client.BaseAddress = new Uri(BaseUrl);
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     HttpResponseMessage response = client.GetAsync("api/Authentication/FacultyDetails").Result;
                     client.Dispose();
-                    if(response.IsSuccessStatusCode)
+                    if (response.IsSuccessStatusCode)
                     {
+                        List<Faculty> list = new List<Faculty>();
                         string stringData = response.Content.ReadAsStringAsync().Result;
+                        //var desdata = JsonConvert.DeserializeObject<Faculty>(stringData);
                         data = JsonConvert.DeserializeObject<List<Faculty>>(stringData);
+                       
                     }
                     else
                     {
                         TempData["error"] = $"{response.ReasonPhrase}";
                     }
                 }
-                
+
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                TempData["Exception"]=ex.Message;
+                TempData["Exception"] = ex.Message;
             }
             return View(data);
         }
@@ -55,7 +63,7 @@ namespace MeetUp.Controllers
         {
             return View();
         }
-
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

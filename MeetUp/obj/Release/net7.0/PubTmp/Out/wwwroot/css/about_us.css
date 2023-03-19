@@ -1,0 +1,118 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-section {
+    color: #fff;
+    padding: 30px 0;
+    padding-bottom: 20px;
+    margin: 20px;
+    font-family: 'Istok Web', 'Roboto';
+    background-color: #679C98;
+}
+
+.profile-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.pro-heading {
+    background-color: #1C4F49;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #FF7B36;
+    font-family: "Itim";
+    font-size: 36px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.profile-col {
+    flex: 00 50%;
+    max-width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.pro-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pro-2 {
+    display: flex;
+    justify-content: flex-start;
+    /* padding-left: 20px; */
+}
+
+.pro-details {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #1C4F49;
+    background-color: #86BFBA;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    border: 2px solid #FF5E34;
+    box-shadow: 0 0 10px #fb7959;
+}
+
+.dname {
+    font-family: "Itim";
+    font-size: 30px;
+    color: #1C4F49;
+}
+
+.emailtxt {
+    font-family: "Itim";
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    border: none;
+}
+
+/*=========== Responsive section ============*/
+
+@media (max-width: 767px) {
+    .profile-section {
+        margin: 10px;
+    }
+
+    .profile-col {
+        justify-content: center;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .pro-details {
+        border: none;
+        width: auto;
+    }
+}

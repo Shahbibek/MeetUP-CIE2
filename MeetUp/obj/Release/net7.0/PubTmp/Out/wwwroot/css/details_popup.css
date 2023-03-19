@@ -1,0 +1,91 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Istok Web";
+}
+
+.main {
+    height: 575px;
+    width: 600px;
+    margin-top: 8%;
+    background-color: #86BFBA;
+    border-radius: 30px;
+    border: 2px solid #1C4F49;
+}
+
+.close_btn {
+    height: 40px;
+    width: 40px;
+    float: right;
+    background-color: #86BFBA;
+    border: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+    .close_btn img {
+        height: 40px;
+        width: 40px;
+    }
+
+.emp-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+.emp-designation {
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.details-tbl {
+    border: 2px solid #1C4F49;
+    width: 475px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: none;
+    margin: 0px;
+}
+
+.tbl-head {
+    width: 100%;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #1C4F49;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.details-tbl tr {
+    height: 40px;
+}
+
+.td-1 {
+    background-color: #1c4f493c;
+    width: 200px;
+}
+
+.details-tbl td {
+    border-top: 1px solid #1C4F49;
+    text-align: left;
+    padding-left: 5px;
+}

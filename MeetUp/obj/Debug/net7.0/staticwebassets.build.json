@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/zH8i35p4b81KdFVXBPkvQoJK8SS+8s+Xbhq9KZ8OKA=",
+  "Hash": "dfzaqjhff0SvOiZupsXzNTwG72sTe2apvvh/3jj6v8k=",
   "Source": "MeetUp",
   "BasePath": "_content/MeetUp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\appoint_pdf.css"
+    },
+    {
+      "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\chat_bot.css",
+      "SourceId": "MeetUp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\",
+      "BasePath": "_content/MeetUp",
+      "RelativePath": "css/chat_bot.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\chat_bot.css"
     },
     {
       "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\details_popup.css",
@@ -355,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\appointment-booking.png"
+    },
+    {
+      "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\ask_me.png",
+      "SourceId": "MeetUp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\",
+      "BasePath": "_content/MeetUp",
+      "RelativePath": "img/ask_me.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ask_me.png"
     },
     {
       "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\back_orange.png",
@@ -831,6 +865,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\search_icon.png"
+    },
+    {
+      "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\send.png",
+      "SourceId": "MeetUp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\",
+      "BasePath": "_content/MeetUp",
+      "RelativePath": "img/send.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\send.png"
     },
     {
       "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\time.webp",

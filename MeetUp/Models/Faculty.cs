@@ -2,13 +2,21 @@
 {
     public class Faculty
     {
-        public int Id { get; set; }
-        public int ManagementId { get; set; }
-        public string Name { get; set; }
-        public string Designation { get; set; }
-        public string School { get; set; }
-        public string Institute { get; set; }
-        public string ProfileUrl { get; set; }
-        public string Place { get; set; }
+            public string id { get; set; }
+            public string managementId { get; set; }
+            public string name { get; set; }
+            public string designation { get; set; }
+            public string school { get; set; }
+            public string institute { get; set; }
+            public string profileUrl { get; set; }
+            public string place { get; set; }
+            public string department { get; set; }
+            public string teachingExperience { get; set; }
+            public string industrialExperience { get; set; }
+            public string totalExperience { get; set; }
+            public string qualification { get; set; }
+            public string specification { get; set; }
+            public string knownFor { get; set; }
+
     }
 }

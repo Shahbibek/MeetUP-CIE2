@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\appoint_pdf.css"
     },
     {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\chat_bot.css",
+      "PackagePath": "staticwebassets\\css\\chat_bot.css"
+    },
+    {
       "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\css\\details_popup.css",
       "PackagePath": "staticwebassets\\css\\details_popup.css"
     },
@@ -91,6 +95,10 @@
     {
       "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\appointment_pic.png",
       "PackagePath": "staticwebassets\\img\\appointment_pic.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\ask_me.png",
+      "PackagePath": "staticwebassets\\img\\ask_me.png"
     },
     {
       "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\back_orange.png",
@@ -187,6 +195,10 @@
     {
       "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\search_icon.png",
       "PackagePath": "staticwebassets\\img\\search_icon.png"
+    },
+    {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\send.png",
+      "PackagePath": "staticwebassets\\img\\send.png"
     },
     {
       "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\img\\time.webp",

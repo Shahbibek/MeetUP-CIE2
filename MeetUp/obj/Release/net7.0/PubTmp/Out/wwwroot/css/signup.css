@@ -1,0 +1,317 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: auto;
+    width: auto;
+    margin: 20px;
+    background-image: url("../img/bg_main.png");
+    background-position: top;
+    background-color: #86BFBA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.logo {
+    margin-left: 70%;
+}
+
+.box_main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 1100px) {
+    /* .box_main {
+    margin-right: -15%;
+  }
+
+  .logo {
+    margin-right: -15%;
+  } */
+}
+
+
+.container {
+    height: 700px;
+    width: 1020px;
+    padding: 0px;
+    display: flex;
+    background: #1C4F49;
+    align-items: center;
+    border: 7px solid #1C4F49;
+    margin-top: 20px;
+    transform: translateX(-60px);
+    margin-bottom: 100px;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.banner {
+    width: 475px;
+    height: 700px;
+    background: #D8D8D8;
+    overflow: hidden;
+}
+
+.form_box {
+    overflow: hidden;
+    background: #1C4F49;
+    height: 700px;
+    width: 545px;
+    text-align: center;
+}
+
+.input_form {
+    height: 100%;
+    padding: 50px;
+}
+
+.intro {
+    text-align: left;
+}
+
+.form_heading {
+    /* margin-top: 50px; */
+    margin-left: 28px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Itim;
+    font-size: 40px;
+}
+
+.form_desc {
+    margin-top: 12px;
+    margin-left: 28px;
+    margin-bottom: 30px;
+    color: rgba(176, 176, 176, 1);
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.input_box {
+    width: 100%;
+    height: 65px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+::placeholder {
+    color: rgba(176, 176, 176, 1);
+}
+
+
+.input_email, .input_password, .input_cPassword, .input_fName, .input_lName {
+    width: 368px;
+    height: 45px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    color: rgba(176, 176, 176, 1);
+    font-family: Itim;
+    font-size: 24px;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(28, 79, 73, 1);
+    border: 2px solid rgba(176, 176, 176, 1);
+    outline: none;
+}
+
+.btn_box {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+.register_btn {
+    width: 368px;
+    height: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-family: itim;
+    background: rgba(255, 122, 53, 1);
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 10px;
+}
+    /* .txt_have_acc {
+  width: 368px;
+  color: #B0B0B0;
+  font-family: Itim;
+  font-size: 24px;
+  text-align: center;
+} */
+    .footer p {
+        color: #B0B0B0;
+        font-family: Itim;
+        font-size: 24px;
+    }
+
+.footer_txt_login {
+    width: 368px;
+    color: rgba(255, 122, 53, 1);
+    font-family: Itim;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.back_arrow {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: #FF7B36;
+}
+
+/*Image Box*/
+
+.img_box {
+    width: 439px;
+    height: 440px;
+    background: url("../img/appointment_pic.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 193px;
+    left: 24px;
+    overflow: hidden;
+}
+
+/* Heading Text*/
+.txt_get_your {
+    width: 119px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    font-family: Itim;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+}
+
+.txt_appointment {
+    width: 180px;
+    color: rgba(28, 79, 73, 1);
+    position: absolute;
+    top: 59px;
+    left: 80px;
+    font-family: Itim;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+}
+
+.txt_now {
+    width: 84px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 97px;
+    left: 162px;
+    font-family: Itim;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+}
+
+.heading_txt {
+    width: 310px;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 26px;
+    left: 24px;
+    overflow: hidden;
+}
+
+.input_box span {
+    text-align: left;
+}
+
+.error_text {
+    margin-left: 40px;
+    margin-top: 2px;
+    color: #D8D8D8;
+    display: flex;
+    align-items: flex-start;
+}
+
+.valid_email, .valid_digit, .valid_same {
+    margin-left: -60px;
+}
+
+/* validation massage
+.invalid input {
+  border-color: #d93025;
+  } 
+
+  .input_email .show-hide,.input_password .show-hide,.input_cPassword .show-hide  {
+  transform: translateY(-50%);
+  color: #919191;
+  cursor: pointer;
+  }
+  
+  .field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
+  }
+
+  .invalid .error { 
+    display: flex;
+  }
+  
+  .error .error-icon{ 
+    margin-right: 6px; 
+    font-size: 15px;
+  }
+  
+  .create-password .error { 
+    align-items: flex-start;
+  }
+  
+  .create-password .error-icon { 
+    margin-top: 4px;
+  }
+   */

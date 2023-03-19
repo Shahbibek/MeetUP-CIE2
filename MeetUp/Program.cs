@@ -21,7 +21,7 @@ if (!app.Environment.IsDevelopment())
 // 404 page not found error handling start
 app.Use(async (context, next) =>
 {
-    await next();
+        await next();
     if (context.Response.StatusCode == 404)
     {
         context.Request.Path = "/Home/Error";
