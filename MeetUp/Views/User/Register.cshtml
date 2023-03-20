@@ -33,39 +33,39 @@
                     <div class="img_box"></div>
                 </div>
                 <div class="form_box">
-                    <form class="input_form" method="post" asp-action="Register">
+                    <form class="input_form" method="post" asp-controller="User" asp-action="Register">
                         <div class="intro">
                             <span class="form_heading">Register now</span>
                             <p class="form_desc">Give your information for register.</p>
                         </div>
                         <div class="input_box">                            
-                            @Html.TextBoxFor(m => m.FName, new { @class = "input_fName", @type="text", @placeholder = "First Name"});
+                            @Html.TextBoxFor(m => m.firstName, new { @class = "input_fName", @type="text", @placeholder = "First Name", @required="required"});
                             <div class="error_text">
-                                <span asp-validation-for="FName" style="color:red"></span>
+                                <span asp-validation-for="firstName" style="color:red"></span>
                             </div>
                         </div>
                         <div class="input_box">                            
-                            @Html.TextBoxFor(m => m.LName, new { @class = "input_lName", @type="text", @placeholder = "Last Name"});
+                            @Html.TextBoxFor(m => m.lastName, new { @class = "input_lName", @type="text", @placeholder = "Last Name", @required="required"});
                             <div class="error_text">
-                                <span asp-validation-for="LName" style="color:red"></span>
+                                <span asp-validation-for="lastName" style="color:red"></span>
                             </div>
                         </div>
                         <div class="input_box">                            
-                            @Html.TextBoxFor(m => m.Email, new { @class = "input_email", @type="text", @placeholder = "Enter Email"});
+                            @Html.TextBoxFor(m => m.email, new { @class = "input_email", @type="text", @placeholder = "Enter Email", @required="required"});
                             <div class="error_text">
-                                <span asp-validation-for="Email" style="color:red"></span>
+                                <span asp-validation-for="email" style="color:red"></span>
                             </div>
                         </div>
                         <div class="input_box">                            
-                            @Html.TextBoxFor(m => m.Password, new { @class = "input_password", @type="password", @placeholder = "Enter Password"});
+                            @Html.TextBoxFor(m => m.password, new { @class = "input_password", @type="password", @placeholder = "Enter Password", @required="required"});
                             <div class="error_text">
-                                <span asp-validation-for="Password" style="color:red"></span>
+                                <span asp-validation-for="password" style="color:red"></span>
                             </div> 
                         </div>
                         <div class="input_box">                            
-                            @Html.TextBoxFor(m => m.CNFPassword, new { @class = "input_cPassword", @type="password", @placeholder = "Enter Confirm Password"});
+                            @Html.TextBoxFor(m => m.confirmPassword, new { @class = "input_cPassword", @type="password", @placeholder = "Enter Confirm Password", @required="required"});
                             <div class="error_text">
-                                <span asp-validation-for="CNFPassword" style="color:red"></span>
+                                <span asp-validation-for="confirmPassword" style="color:red"></span>
                             </div>
                         </div>
                         <div class="btn_box">
@@ -85,5 +85,5 @@
     </body>
 
 @section scripts{
-@{ await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");}
+    <partial name="_ValidationScriptsPartial"/>
 }

@@ -25,10 +25,6 @@ namespace MeetUp.Controllers
             //_apiConnection = apiConnection;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
         public IActionResult Login()
         {
             return View();
@@ -43,7 +39,6 @@ namespace MeetUp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(Users model)
         {
-            List<Users> users = new List<Users>();
             try
             {
                 if (ModelState.IsValid)
@@ -55,18 +50,18 @@ namespace MeetUp.Controllers
                         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                         var data = JsonConvert.SerializeObject(model);
                         var RegisterData = new StringContent(data, Encoding.UTF8, "application/json");
-                        //HttpResponseMessage response = await client.PostAsync("api/Authentication/RegisterUser", RegisterData).ConfigureAwait(false);
+                        HttpResponseMessage response = await client.PostAsync("api/Authentication/RegisterUser", RegisterData).ConfigureAwait(false);
                         //response.EnsureSuccessStatusCode();
-                        //if (response.IsSuccessStatusCode)
-                        //{
-                        //    //TempData["success"] = response.Content.ReadAsStringAsync().Result;
-                        //    var responseContent = await response.Content.ReadAsStringAsync();
-                        //    users = JsonConvert.DeserializeObject<List<Users>>(responseContent);                          
-                        //}
-                        //else
-                        //{
-                        //    TempData["error"] = response.Content.ReadAsStringAsync().Result;  
-                        //}
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var responseContent = await response.Content.ReadAsStringAsync();
+                            //TempData["success"] = response.Content.ReadAsStringAsync().Result;
+                            
+                        }
+                        else
+                        {
+                            TempData["error"] = response.Content.ReadAsStringAsync().Result;
+                        }
                     }
                 }
                 else
@@ -79,7 +74,7 @@ namespace MeetUp.Controllers
             {
                 throw;
             }
-            return RedirectToAction("Login");
+            return RedirectToAction("Login", "User");
 
         }
         public IActionResult ForgetPassword()
