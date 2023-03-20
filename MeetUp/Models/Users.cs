@@ -55,5 +55,7 @@ namespace MeetUp.Models
 
         //public string ProfileURL { get; set; }
 
+        
+
     }
 }

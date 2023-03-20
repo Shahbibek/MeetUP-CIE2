@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Verify Phone</title>
+    <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Istok Web" rel="stylesheet" />
+    <link href="~/css/multiview.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="heading">
+                <span>Verify your mobile number</span>
+            </div>
+            <form id="Myform" runat="server">
+                <p class="desc">Enter your mobile number to verify</p>
+                <div>
+                    <input type="text" pattern="^([0]|\+91)?[789]\d{9}$" ID="mobileNo" class="mbl-no" placeholder="Enter mobile no.with (+91)" required>
+                </div>
+                <center>
+                    <div class="recapcha" id="recaptcha-container"></div>
+                </center>
+                <div class="button-btn">
+                    <button type="button" onclick="phoneAuth();" style="background-color: #FF7B36; height: 40px; width: 250px; margin-top: 40px; margin-bottom: 30px; font-size: 24px; border: 0px; border-radius: 15px; ">Submit</button>
+                </div>
+            </form>
+            <div class="heading">
+                <span>Verify yourself</span>
+            </div>
+            <form action="">
+                <p class="desc">Enter the 6 digit OTP sent via sms on your phone</p>
+                <div>
+                    <input type="text" id="OTPtxt" class="mbl-no" pattern="{6}" placeholder="Enter the OTP" required>
+                </div>
+                <div class="submit-btn">
+                    <button type="button" runat="server" onclick="codeverify();" style="background-color: #FF7B36; height: 40px; width: 250px; margin-top: 40px; margin-bottom: 30px; font-size: 24px; border: 0px; border-radius: 15px;">Verify</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--firebase integration start-->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBZa_Lz83DsFiGZDuLKZtNxpOVODx2DBvM",
+            authDomain: "meet-up-386be.firebaseapp.com",
+            projectId: "meet-up-386be",
+            storageBucket: "meet-up-386be.appspot.com",
+            messagingSenderId: "124633400463",
+            appId: "1:124633400463:web:6d20aeef940a0991735cfa",
+        };
+        firebase.initializeApp(firebaseConfig);
+                    //    render();
+                    //function render() {
+                    //    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier("recaptcha-container");
+                    //    recaptchaVerifier.render();
+                    //};
+    </script>
+    <script src="~/js/number_verification.js" type="text/javascript"> </script>
+    <!--firebase integration end-->
+</body>

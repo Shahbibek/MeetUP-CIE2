@@ -205,6 +205,10 @@
       "PackagePath": "staticwebassets\\img\\time.webp"
     },
     {
+      "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\js\\number_verification.js",
+      "PackagePath": "staticwebassets\\js\\number_verification.js"
+    },
+    {
       "Id": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

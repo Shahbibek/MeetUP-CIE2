@@ -1,4 +1,5 @@
-﻿@model IEnumerable<MeetUp.Models.Faculty>
+﻿@*@model IEnumerable<MeetUp.Models.Faculty>;*@
+@model MeetUp.AccessModel;
 @{
     ViewData["Title"] = "Meet UP";
 }
@@ -67,6 +68,10 @@
         </div>
     </div>
 </section>
+@*style for faculty details start*@
+
+
+@*style for faculty details end*@
 
 <!-- end section-2 -->
 
@@ -80,9 +85,9 @@
             </div>
         </div>
         <div class="row">
-            @if (Model.Count() > 0)
+            @if (Model.Faculty.Count() > 0)
             {
-                @foreach(var d in Model)
+                @foreach(var d in Model.Faculty)
                 {
                     <div class="col-md-4">
                         <div class="border-box"></div>
@@ -210,8 +215,8 @@
 <!-- Button trigger modal control start -->*@
 
             <!-- Button trigger modal control start -->
-@foreach (var d in Model)
-{       
+@*@foreach (var d in Model)*@
+@*{       *@
     <body>
         <style>
             *{
@@ -304,22 +309,26 @@
             }
         </style>
     </body>
+@if (Model.Faculty.Count() > 0)
+{
+    @foreach (var d in Model.Faculty)
+    {
         <div class="modal fade" id="@d.id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         @*<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>*@
-                        
-                    @*<button class="close_btn">
-                        <img src="./images/close.png" alt="">
-                    </button>*@
-                        
+
+                        @*<button class="close_btn">
+                                <img src="./images/close.png" alt="">
+                            </button>*@
+
                     </div>
                     <div class="main1">
                         <button type="button" class="close_btn1" data-bs-dismiss="modal" aria-label="Close">
                             <img src="~/img/close.png" alt="">
                         </button>
-                       @* <div class="modal-body">*@
+                        @* <div class="modal-body">*@
                         <div class="emp-name1">
                             <span>@d.name</span>
                         </div>
@@ -327,11 +336,11 @@
                             <span>@d.designation</span>
                         </div>
                         <div class="container1">
-                        <div class="tbl-head1">Details</div>
+                            <div class="tbl-head1">Details</div>
                             <table class="details-tbl1">
-                               @* <tr>
-                                    <td style="color:white; font-size:20px; text-align:center; background-color:#1C4F49">Details</td>
-                                </tr>*@
+                                @* <tr>
+                                            <td style="color:white; font-size:20px; text-align:center; background-color:#1C4F49">Details</td>
+                                        </tr>*@
                                 <tr>
                                     <td class="td-11">
                                         Department
@@ -399,204 +408,22 @@
                 </div>
             </div>
         </div>
+    }
 }
+@*}*@
             <!-- Button trigger modal control end -->
 
-            <!-- chat bot content start -->
+
+            <!-- Modal popup Chat popup start -->
+<body>
+    @Html.Partial("_PopUpPartial",Model.Chat);
+</body>
+            <!-- Modal popup Chat popup end -->
 
 
 
-<Body>
-    <style>
-        /* Chat containers */
-        .container12 {
-            border: 2px solid #dedede;
-            background-color: #f1f1f1;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px 0;
-        }
 
-        /* Darker chat container */
-        .darker12 {
-            border-color: #ccc;
-            background-color: #ddd;
-        }
 
-        /* Clear floats */
-        .container12::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        /* Style images */
-        .container12 img {
-            float: left;
-            max-width: 60px;
-            width: 100%;
-            margin-right: 20px;
-            border-radius: 50%;
-        }
-
-        /* Style the right image */
-        .container12 img.right {
-            float: right;
-            margin-left: 20px;
-            margin-right: 0;
-        }
-
-        .main2 {
-            background-color: #86BFBA;
-        }
-        /* Style time text */
-        .time-right {
-            float: right;
-            color: #aaa;
-        }
-
-        /* Style time text */
-        .time-left {
-            float: left;
-            color: #999;
-        }
-        /* Style button with in text */
-        .buttonIn {
-            display: inline-block;
-            position: relative;
-            height:40px;
-            width: 100%;
-            border-radius: 5px;
-            outline: none;
-        }
-
-        /*style text box for chat */
-        .text_box {
-            width: 100%;
-            height: 75px;
-            text-align: center;
-            background-size: cover;
-            opacity: 1;
-            margin-right:10px;
-            overflow: hidden;
-
-        }
-        .button_send {
-            height:100%;
-            width:10%;
-            float:right;
-            border:none;
-            background-color: #FF7B36;
-            border-radius: 5px;
-        }
-
-        .input_text {
-            width:90%;
-            height: 100%;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            padding-left: 8px;
-            color: #565656;
-            font-family: Itim;
-            font-size: 18px;
-            text-align: left;
-            
-        }
-        .btn_ask {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            width: 3rem !important;
-            height: 3rem !important;
-            border-radius: 50%;
-            background: #FF7127;
-            font-family: Itim;
-            /* box-shadow: 0px 5px 20px #ff0000; */
-            z-index: 1;
-            border: 1px solid #FF7127;
-            cursor: pointer;
-            display: inline-table;
-            box-shadow: 0 0 15px #565656;
-        }
-
-            .btn_ask:active, .btn_ask:hover {
-                background: #FF7127;
-        }
-        .my-model {
-            border-radius: 10px;
-        }
-
-    </style>
-</Body>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn_ask" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <img src="~/img/ask_me.png" style="height:auto; width:auto; padding:5px" />
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content my-model" style="background-color:#86BFBA">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Hey, how can i assist you today?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container12">
-                        <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
-                        <p>Hello. How are you today?</p>
-                        <span class="time-right">11:00</span>
-                    </div>
-
-                    <div class="container12 darker12">
-                        <img src="https://wallpapercave.com/wp/wp6798745.jpg" alt="logo" class="right">
-                        <p>Hey! I'm fine. Thanks for asking!</p>
-                        <span class="time-left">11:01</span>
-                    </div>
-
-                    <div class="container12">
-                        <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
-                        <p>Sweet! So, what do you wanna do today?</p>
-                        <span class="time-right">11:02</span>
-                    </div>
-
-                    <div class="container12 darker12">
-                        <img src="https://wallpapercave.com/wp/wp6798745.jpg" alt="logo" class="right">
-                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-                        <span class="time-left">11:05</span>
-                    </div>
-
-                    <div class="container12">
-                        <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
-                        <p>Sweet! So, what do you wanna do today?</p>
-                        <span class="time-right">11:02</span>
-                    </div>
-
-                    <div class="container12 darker12">
-                        <img src="https://wallpapercave.com/wp/wp6798745.jpg" alt="logo" class="right">
-                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-                        <span class="time-left">11:05</span>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="buttonIn">
-                        @*<div class="text_box">*@
-                            <input type="text" id="enter" class="input_text" placeholder="Ask me anything !!" required>
-                            @*@Html.TextBoxFor( new { @class = "input_email", @type="text", @placeholder = "Please Enter Email", @required = "required"});*@
-                        @*</div>*@
-                        <button id="send_chat" class="button_send">
-                        <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
-                        </button>
-                    
-                        @*   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                             <button type="button" class="btn btn-primary">Save changes</button>*@
-                    </div>
-                </div>
-        </div>
-    </div>
-</div>
-            <!-- chat bot content end -->
 
 
 

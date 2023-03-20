@@ -366,13 +366,13 @@ a:hover {
 }
 
 .details-btn {
+    border: none;
     margin-top: 15px;
     border-radius: 5px;
     padding: 5px;
     color: #FF7B36;
     padding-left: 10px;
     padding-right: 10px;
-    border: none;
     background-color: #1C4F49;
     vertical-align: middle;
 }

@@ -1,3 +1,11 @@
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.csproj.AssemblyReference.cache
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.GeneratedMSBuildEditorConfig.editorconfig
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.AssemblyInfoInputs.cache
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.AssemblyInfo.cs
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.csproj.CoreCompileInputs.cache
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.MvcApplicationPartsAssemblyInfo.cache
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.RazorAssemblyInfo.cache
+E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.RazorAssemblyInfo.cs
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\appsettings.Development.json
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\appsettings.json
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\MeetUp.staticwebassets.runtime.json
@@ -242,14 +250,6 @@ E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\ru
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.csproj.AssemblyReference.cache
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.GeneratedMSBuildEditorConfig.editorconfig
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.AssemblyInfoInputs.cache
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.AssemblyInfo.cs
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.csproj.CoreCompileInputs.cache
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.MvcApplicationPartsAssemblyInfo.cache
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.RazorAssemblyInfo.cache
-E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\MeetUp.RazorAssemblyInfo.cs
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\staticwebassets\msbuild.MeetUp.Microsoft.AspNetCore.StaticWebAssets.props
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\staticwebassets\msbuild.build.MeetUp.props
 E:\SEM VI-RKU\.net_advance\CIE2 Project\Blazor\MeetUp\MeetUp\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.MeetUp.props
