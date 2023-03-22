@@ -28,56 +28,40 @@ namespace MeetUp.Controllers
         public IActionResult Index()
         {
             var data = GetFaculty();
-            var chat = GetChatDetails(new GetChat());
+            var Chatdata = GetChat();
 
             var viewModel = new AccessModel()
             {
 
-                Faculty = data,               
-                Chat = new GetChat()
+                Faculty = data,
+                GetChatDetails = Chatdata
 
             };
-
-            //return View(viewModel);
-            
-
-                //List<Faculty> data = new List<Faculty>();
-                //try
-                //{
-                //    using (HttpClient client = new HttpClient())
-                //    {
-                //        client.BaseAddress = new Uri(BaseUrl);
-                //        client.DefaultRequestHeaders.Accept.Clear();
-                //        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                //        HttpResponseMessage response = client.GetAsync("api/Authentication/FacultyDetails").Result;
-                //        client.Dispose();
-                //        if (response.IsSuccessStatusCode)
-                //        {
-                //            List<Faculty> list = new List<Faculty>();
-                //            string stringData = response.Content.ReadAsStringAsync().Result;
-                //            //var desdata = JsonConvert.DeserializeObject<Faculty>(stringData);
-                //            data = JsonConvert.DeserializeObject<List<Faculty>>(stringData);
-
-                //        }
-                //        else
-                //        {
-                //            TempData["error"] = $"{response.ReasonPhrase}";
-                //        }
-                //    }
-
-
-                //}
-                //catch (Exception ex)
-                //{
-                //    TempData["Exception"] = ex.Message;
-                //}
-                return View(viewModel);
+            return View(viewModel);
         }
 
         public IActionResult Privacy()
         {
             return View();
         }
+
+        // second time popup partial view start
+        public async Task<IActionResult> PopUpPartial()
+        {
+            var Chatdata = GetChat();
+            var data = GetFaculty();
+            var viewModel = new AccessModel()
+            {
+                Faculty = data,
+                GetChatDetails = Chatdata
+                //Chat = new GetChat()
+
+            };
+            //return PartialView("_PopUpPartial", viewModel);
+            return View(viewModel);
+        }
+
+        // second time popup partial view end
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -125,40 +109,34 @@ namespace MeetUp.Controllers
 
         //Get faculty list data fetch from api end
 
-        //Get chat bot data fetch from api start
+        //send the search data to api start
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<List<GetChat>> GetChatDetails(GetChat model)
+        public IActionResult SendChatRequest(GetChat chat)
         {
-            List<GetChat> chat = new List<GetChat>();
+            GetResponse message = new GetResponse();
 
             try
             {
-                if (ModelState.IsValid)
+                using (HttpClient client = new HttpClient())
                 {
-                    using (HttpClient client = new HttpClient())
+                    client.BaseAddress = new Uri(BaseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    var data1 = chat;
+                    var data = JsonConvert.SerializeObject(data1);
+                    var contentData = new StringContent(data, Encoding.UTF8, "application/json");
+                    var response = client.PostAsync("api/Authentication/ChatBot", contentData).Result;
+                    if (response.IsSuccessStatusCode)
                     {
-                        client.BaseAddress = new Uri(BaseUrl);
-                        client.DefaultRequestHeaders.Accept.Clear();
-                        var data = JsonConvert.SerializeObject(model);
-                        var contentData = new StringContent(data, Encoding.UTF8, "application/json");
-                        var response = client.PostAsync("api/Authentication/ChatBot", contentData).Result;
-                        if (response.IsSuccessStatusCode)
-                        {
-                            var responseContent = await response.Content.ReadAsStringAsync();
-                            chat = JsonConvert.DeserializeObject<List<GetChat>>(responseContent);
-                        }
-                        else
-                        {
-                            var errorMessage = await response.Content.ReadAsStringAsync();
-                        }
-
-
+                        var responseContent = response.Content.ReadAsStringAsync();
+                        Console.WriteLine(responseContent);
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Something went wrong");
+                    else
+                    {
+                        var errorMessage = response.Content.ReadAsStringAsync();
+                    }
+
                 }
 
             }
@@ -166,15 +144,53 @@ namespace MeetUp.Controllers
             {
                 ex.Message.ToString();
             }
-            return  chat;
+            //return message;
+            return RedirectToAction("PopUpPartial");
         }
-        //Get chat bot data fetch from api end
 
+        //send the search data to api end
 
-        public IActionResult PopUpPartial()
+        //Get chat details from the api start (response)
+        private List<GetChatDetails> GetChat()
         {
-            return PartialView("_PopUpPartial", GetChatDetails);
+
+            List<GetChatDetails> Chatdata = new List<GetChatDetails>();
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(BaseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    HttpResponseMessage response = client.GetAsync("api/Authentication/GetChat").Result;
+                    client.Dispose();
+                    if (response.IsSuccessStatusCode)
+                    {
+                        List<GetChatDetails> list = new List<GetChatDetails>();
+                        string stringData = response.Content.ReadAsStringAsync().Result;
+                        if (stringData != null)
+                        {
+                            Chatdata = JsonConvert.DeserializeObject<List<GetChatDetails>>(stringData);
+                        }
+                        //var desdata = JsonConvert.DeserializeObject<Faculty>(stringData);
+
+                    }
+                    else
+                    {
+                        TempData["error"] = $"{response.ReasonPhrase}";
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                TempData["Exception"] = ex.Message;
+            }
+            return Chatdata;
+
         }
-       
+
+        //Get chat details from the api end (response)
     }
 }

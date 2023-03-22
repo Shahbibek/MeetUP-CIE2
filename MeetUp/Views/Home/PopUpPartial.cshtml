@@ -1,0 +1,267 @@
+﻿@model MeetUp.AccessModel;
+<Body>
+    <style>
+        /* Chat containers */
+        .container12 {
+            border: 2px solid #dedede;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Darker chat container */
+        .darker12 {
+            border-color: #ccc;
+            background-color: #ddd;
+        }
+
+        /* Clear floats */
+        .container12::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Style images */
+        .container12 img {
+            float: left;
+            max-width: 60px;
+            width: 100%;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+            /* Style the right image */
+            .container12 img.right {
+                float: right;
+                margin-left: 20px;
+                margin-right: 0;
+            }
+
+        .main2 {
+            background-color: #86BFBA;
+        }
+        /* Style time text */
+        .time-right {
+            float: right;
+            color: #aaa;
+        }
+
+        /* Style time text */
+        .time-left {
+            float: left;
+            color: #999;
+        }
+        /* Style button with in text */
+        .buttonIn {
+            display: inline-block;
+            position: relative;
+            height: 40px;
+            width: 100%;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /*style text box for chat */
+        .text_box {
+            width: 100%;
+            height: 75px;
+            text-align: center;
+            background-size: cover;
+            opacity: 1;
+            border: none;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+
+        .button_send {
+            height: 100%;
+            width: 10%;
+            float: right;
+            border: none;
+            background-color: #FF7B36;
+            border-radius: 5px;
+        }
+
+        .input_text {
+            width: 90%;
+            height: 100%;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            color: #565656;
+            font-family: Itim;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .close_btn1 {
+            height: 40px;
+            width: 40px;
+            float: right;
+            background-color: #86BFBA;
+            border: none;
+            margin-top: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+            .close_btn1 img {
+                height: 40px;
+                width: 40px;
+            }
+
+        .btn_ask {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            width: 3rem !important;
+            height: 3rem !important;
+            border-radius: 50%;
+            background: #FF7127;
+            font-family: Itim;
+            /* box-shadow: 0px 5px 20px #ff0000; */
+            z-index: 1;
+            border: 1px solid #FF7127;
+            cursor: pointer;
+            display: inline-table;
+            box-shadow: 0 0 15px #565656;
+        }
+
+            .btn_ask:active, .btn_ask:hover {
+                background: #FF7127;
+            }
+
+        .my-model {
+            border-radius: 10px;
+        }
+
+    </style>
+</Body>
+@try
+{
+    @if (Model != null && Model.GetChatDetails.Count() > 0)
+    {
+        <!-- Button trigger modal -->
+        <button type="button" class="btn_ask" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="~/img/ask_me.png" style="height:auto; width:auto; padding:5px" />
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content my-model" style="background-color:#86BFBA">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hey, how can i assist you today?</h5>
+                        <button type="button" class="close_btn1" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="~/img/close.png" alt="">
+                        </button>
+                    </div>
+                    @foreach (var item in Model.GetChatDetails)
+                    {
+                        <div class="modal-body">
+                            <div class="container12">
+                                <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
+                                <p>@item.request</p>
+                                <span class="time-right">@item.createdAt</span>
+                            </div>
+
+                            <div class="container12 darker12">
+                                <img src="https://wallpapercave.com/wp/wp6798745.jpg" alt="logo" class="right">
+                                <p>@item.message</p>
+                                <span class="time-left">@item.createdAt</span>
+                            </div>
+                        </div>
+                    }
+                    <div class="modal-footer">
+                        <div class="buttonIn">
+
+                            <form asp-action="SendChatRequest" asp-controller="Home" method="post">
+                                <input type="text" asp-for="Chat.request" class="input_text" placeholder="Ask me anything !!" required>
+                                <button type="submit" class="button_send">
+                                    <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- chat bot content end -->
+    }
+    else
+    {
+        <!-- Button trigger modal -->
+        <button type="button" class="btn_ask" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="~/img/ask_me.png" style="height:auto; width:auto; padding:5px" />
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content my-model" style="background-color:#86BFBA">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hey, how can i assist you today?</h5>
+                        <button type="button" class="close_btn1" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="~/img/close.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container12">
+                            <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
+                            <h5>Hii, Welcome to MeetUp !!</h5>
+                            <p>May I help you ?</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="buttonIn">
+
+                            <form asp-action="SendChatRequest" asp-controller="Home" method="post">
+                                <input type="text" asp-for="Chat.request" class="input_text" placeholder="Ask me anything !!" required>
+                                <button type="submit" class="button_send">
+                                    <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- chat bot content end -->
+    }
+
+}
+catch (Exception ex)
+{
+    ex.Message.ToString();
+}
+
+
+@*@section Scripts{
+    <script>
+        function BtnClick() {
+            var message = $("#messageChat").val();
+            var obj = {
+                message: message
+            }
+            SubmitForm(obj);
+        }
+        function SubmitForm(obj) {
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("GetChat", "Home")",
+                data: obj,
+                success: function (data) {
+                    //data = JSON.parse(data);
+                    //console.log(data);
+                    alert(data);
+                },
+                error: function (err) {
+                    console.error(err);
+                }
+            })
+        }
+    </script>
+}
+*@
