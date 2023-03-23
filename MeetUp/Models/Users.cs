@@ -29,8 +29,5 @@ namespace MeetUp.Models
         [DataType(DataType.Password)]
         [Compare("password", ErrorMessage = "* Password must be same")]
         public string confirmPassword { get; set; }
-
-
-
     }
 }

@@ -19,7 +19,7 @@
                         </p>
                     </div>
                     <div class="booking-btn-box">
-                        <button class="booking-btn" id="booking_btn" >Book Appointment</button>
+                        <button class="booking-btn" id="booking_btn">Book Appointment</button>
                     </div>
                 </div>
             </div>
@@ -117,47 +117,11 @@
             }
             else
             {
-                <tr class="text-center">
+                <tr class="container">
                     <td colspan="4"><h2 class="text-warning bg-info">No Record</h2></td>
                 </tr>
             }
             
-            @*<div class="col-md-4">
-                <div class="border-box"></div>
-                <div class="emp-box">
-                    <div class="img-box">
-                        <img src="~/img/Paresh sir.png" alt="Dr. Paresh Tanna">
-                    </div>
-                    <div class="name-box">
-                        <span><b>Dr. Paresh Tanna</b></span>
-                    </div>
-                    <div class="desc-box">
-                        <span>Professor / Nodal Officer</span>
-                        <span>School of Engineering</span>
-                        <span>RK University</span>
-                        <span>Rajkot, Gujarat</span>
-                        <span class="details-btn"><a href="#">See Details</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="border-box"></div>
-                <div class="emp-box">
-                    <div class="img-box">
-                        <img src="~/img/Bhoomi mam.png" alt="Bhoomi Dangar">
-                    </div>
-                    <div class="name-box">
-                        <span><b>Bhoomi Dangar</b></span>
-                    </div>
-                    <div class="desc-box">
-                        <span>Assistant Professor</span>
-                        <span>School of Engineering</span>
-                        <span>RK University</span>
-                        <span>Rajkot, Gujarat</span>
-                        <span class="details-btn"><a href="#">See Details</a></span>
-                    </div>
-                </div>
-            </div>*@
         </div>
     </div>
 </section>
@@ -188,35 +152,7 @@
         </div>
     </div>
 </section>
-<!-- end section 4 -->
-@*<!-- Button trigger modal start -->
-<button type="button" class="details-btn" data-toggle="modal" data-bs-target="#id" style="color: #FF7B36;">
-    See Details
-</button>
-<!-- Button trigger modal end -->
-<!-- Button trigger modal control start -->
-<div class="modal fade" id="id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Button trigger modal control start -->*@
 
-            <!-- Button trigger modal control start -->
-@*@foreach (var d in Model)*@
-@*{       *@
     <body>
         <style>
             *{
@@ -416,7 +352,8 @@
 
             <!-- Modal popup Chat popup start -->
 <body>
-    @Html.Partial("_PopUpPartial",Model.Chat);
+    @*@Html.Partial("_PopUpPartial",Model.Chat);*@
+    <partial name="./_PopUpPartial.cshtml"/>
 </body>
             <!-- Modal popup Chat popup end -->
 

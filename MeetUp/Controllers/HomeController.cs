@@ -12,6 +12,7 @@ using Org.BouncyCastle.Ocsp;
 using System.Collections;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 
 namespace MeetUp.Controllers
 {
@@ -57,8 +58,9 @@ namespace MeetUp.Controllers
                 //Chat = new GetChat()
 
             };
-            //return PartialView("_PopUpPartial", viewModel);
-            return View(viewModel);
+            return PartialView("_PopUpPartial", viewModel);
+            //return View(viewModel);
+            //return Content("success");
         }
 
         // second time popup partial view end
@@ -113,7 +115,7 @@ namespace MeetUp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult SendChatRequest(GetChat chat)
+        public async Task<IActionResult> SendChatRequest(GetChat chat)
         {
             GetResponse message = new GetResponse();
 
@@ -146,8 +148,23 @@ namespace MeetUp.Controllers
             }
             //return message;
             return RedirectToAction("PopUpPartial");
+            //return Content("success");
         }
 
+        //[HttpPost]
+        //public async Task<ContentResult> FormChat(GetChat chat)
+        //{
+        //    try
+        //    {
+        //        var ChatSend = SendChatRequest();
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        ex.Message.ToString();
+        //    }
+        //    return Content("success");
+        //}
         //send the search data to api end
 
         //Get chat details from the api start (response)

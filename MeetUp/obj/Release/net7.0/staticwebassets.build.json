@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GoS2zxDPdUoeG2ZnSvBRtAgar4aOg/J4pUK+jdlcpmU=",
+  "Hash": "ZTq2RamMMjuP3IrLS/bkuh7hzCe5s3FLj9+6Pi+jMqQ=",
   "Source": "MeetUp",
   "BasePath": "_content/MeetUp",
   "Mode": "Default",
@@ -899,6 +899,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\time.webp"
+    },
+    {
+      "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\js\\number_verification.js",
+      "SourceId": "MeetUp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\",
+      "BasePath": "_content/MeetUp",
+      "RelativePath": "js/number_verification.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\number_verification.js"
     },
     {
       "Identity": "E:\\SEM VI-RKU\\.net_advance\\CIE2 Project\\Blazor\\MeetUp\\MeetUp\\wwwroot\\js\\site.js",

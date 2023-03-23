@@ -8,6 +8,9 @@ using Newtonsoft.Json.Serialization;
 using MeetUp.Interfaces;
 using System.Text;
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
+using MeetUp.Enums;
+using MeetUp.Services;
 
 namespace MeetUp.Controllers
 {
@@ -29,6 +32,7 @@ namespace MeetUp.Controllers
         {
             return View();
         }
+
         public IActionResult Register()
         {
             Users user = new Users();
@@ -86,5 +90,60 @@ namespace MeetUp.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> GetLogin(Login model)
+        {
+            List<UserDetails> dataList = new List<UserDetails>();
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    using (var client = new HttpClient())
+                    {
+                        client.BaseAddress = new Uri(BaseUrl);
+                        client.DefaultRequestHeaders.Accept.Clear();
+                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                        var data = JsonConvert.SerializeObject(model);
+                        var LoginData = new StringContent(data, Encoding.UTF8, "application/json");
+                        HttpResponseMessage response = await client.PostAsync("api/Authentication/UserLogin", LoginData).ConfigureAwait(false);
+                        //response.EnsureSuccessStatusCode();
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var responseContent = await response.Content.ReadAsStringAsync();
+                            //TempData["success"] = response.Content.ReadAsStringAsync().Result;
+                            //string stringData = response.Content.ReadAsStringAsync().Result;
+                            //var desdata = JsonConvert.DeserializeObject<Faculty>(stringData);
+                            dataList = JsonConvert.DeserializeObject<List<UserDetails>>(responseContent);
+
+                        }
+                        else
+                        {
+                            TempData["error"] = response.Content.ReadAsStringAsync().Result;
+                            ViewBag.Error = CommonServices.ShowAlert(Alerts.Danger, "Something went wrong !!");
+                        }
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "ModelState is not valid!!");
+                    //return RedirectToAction("Login", "User");
+                    return View("Login",model);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+
+        //public ActionResult Get()
+        //{
+        //    //Your other Code will go here 
+        //    var session = HttpContext.Current.Session;
+        //    Session["UserId"] = 
+        //}
     }
 }

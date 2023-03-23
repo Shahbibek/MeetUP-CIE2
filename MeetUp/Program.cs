@@ -6,6 +6,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 // Api Connection String BaseURL
+// memory cache 
+builder.Services.AddDistributedMemoryCache();
+// add session
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromDays(1);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 //builder.Services.AddRefitClient<IApiConnection>().ConfigureHttpClient(c=>c.BaseAddress = new Uri("http://shikatmahmud-001-site1.etempurl.com/api/"));
 
 var app = builder.Build();
@@ -35,7 +44,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+// using authorization problem
 app.UseAuthorization();
+// using session permission
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

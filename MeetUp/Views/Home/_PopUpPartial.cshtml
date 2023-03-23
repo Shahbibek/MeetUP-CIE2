@@ -149,45 +149,54 @@
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content my-model" style="background-color:#86BFBA">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Hey, how can i assist you today?</h5>
-                        <button type="button" class="close_btn1" data-bs-dismiss="modal" aria-label="Close">
-                            <img src="~/img/close.png" alt="">
-                        </button>
-                    </div>
-                    @foreach (var item in Model.GetChatDetails)
-                    {
-                        <div class="modal-body">
-                            <div class="container12">
-                                <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
-                                <p>@item.request</p>
-                                <span class="time-right">@item.createdAt</span>
-                            </div>
-
-                            <div class="container12 darker12">
-                                <img src="https://wallpapercave.com/wp/wp6798745.jpg" alt="logo" class="right">
-                                <p>@item.message</p>
-                                <span class="time-left">@item.createdAt</span>
-                            </div>
+        <div id="updateDiv">
+            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content my-model" style="background-color:#86BFBA">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hey, how can i assist you today?</h5>
+                            <button type="button" class="close_btn1" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="~/img/close.png" alt="">
+                            </button>
                         </div>
-                    }
-                    <div class="modal-footer">
-                        <div class="buttonIn">
+                        @foreach (var item in Model.GetChatDetails)
+                        {
+                            <div class="modal-body">
+                                <div class="container12">
+                                    <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
+                                    <p>@item.request</p>
+                                    <span class="time-right">@item.createdAt</span>
+                                </div>
 
-                            <form asp-action="SendChatRequest" asp-controller="Home" method="post">
+                                <div class="container12 darker12">
+                                    <img src="https://wallpapercave.com/wp/wp6798745.jpg" alt="logo" class="right">
+                                    <p>@item.message</p>
+                                    <span class="time-left">@item.createdAt</span>
+                                </div>
+                            </div>
+                        }
+                        <div class="modal-footer">
+                            <div class="buttonIn">
+                                <form asp-area="" asp-controller="Home" asp-action="SendChatRequest" data-ajax-loading="#loading" data-ajax-mode="replace" data-ajax-update="#updateDiv" data-ajax-success="Success" data-ajax-failure="Failure" data-ajax="true">
+                                    <input type="text" asp-for="Chat.request" class="input_text" placeholder="Ask me anything !!" required>
+                                    <button type="submit" class="button_send">
+                                        <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
+                                    </button>
+                                </form>
+                                @*<partial name="../shared/_ChatForm.cshtml" />*@
+                                @*<form asp-action="SendChatRequest" asp-controller="Home" method="post">
                                 <input type="text" asp-for="Chat.request" class="input_text" placeholder="Ask me anything !!" required>
                                 <button type="submit" class="button_send">
-                                    <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
+                                <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
                                 </button>
-                            </form>
+                                </form>*@
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <!-- chat bot content end -->
     }
     else
@@ -198,31 +207,39 @@
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content my-model" style="background-color:#86BFBA">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Hey, how can i assist you today?</h5>
-                        <button type="button" class="close_btn1" data-bs-dismiss="modal" aria-label="Close">
-                            <img src="~/img/close.png" alt="">
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container12">
-                            <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
-                            <h5>Hii, Welcome to MeetUp !!</h5>
-                            <p>May I help you ?</p>
+        <div>
+            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content my-model" style="background-color:#86BFBA">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hey, how can i assist you today?</h5>
+                            <button type="button" class="close_btn1" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="~/img/close.png" alt="">
+                            </button>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="buttonIn">
-
-                            <form asp-action="SendChatRequest" asp-controller="Home" method="post">
-                                <input type="text" asp-for="Chat.request" class="input_text" placeholder="Ask me anything !!" required>
-                                <button id="sendData" type="submit" class="button_send">
-                                    <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
-                                </button>
-                            </form>
+                        <div class="modal-body">
+                            <div class="container12">
+                                <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
+                                <h5>Hii, Welcome to MeetUp !!</h5>
+                                <p>May I help you ?</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="buttonIn">
+                                <form asp-area="" asp-controller="Home" asp-action="SendChatRequest" data-ajax-loading="#loading" data-ajax-mode="replace" data-ajax-update="#updateDiv" data-ajax-success="Success" data-ajax-failure="Failure" data-ajax="true">
+                                    <input type="text" asp-for="Chat.request" class="input_text" placeholder="Ask me anything !!" required>
+                                    <button type="submit" class="button_send">
+                                        <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
+                                    </button>
+                                </form>
+                                @*<partial name="../shared/_ChatForm.cshtml" />*@
+                                @*<form asp-action="SendChatRequest" asp-controller="Home" method="post">
+                                    <input type="text" asp-for="Chat.request" class="input_text" placeholder="Ask me anything !!" required>
+                                    <button id="sendData" type="submit" class="button_send">
+                                        <img src="~/img/send.png" style="height:auto; width:auto; padding:5px" />
+                                    </button>
+                                </form>*@
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -236,32 +253,8 @@ catch (Exception ex)
 {
     ex.Message.ToString();
 }
-
-
-@*@section Scripts{
-    <script>
-        function BtnClick() {
-            var message = $("#messageChat").val();
-            var obj = {
-                message: message
-            }
-            SubmitForm(obj);
-        }
-        function SubmitForm(obj) {
-            $.ajax({
-                type: "POST",
-                url: "@Url.Action("GetChat", "Home")",
-                data: obj,
-                success: function (data) {
-                    //data = JSON.parse(data);
-                    //console.log(data);
-                    alert(data);
-                },
-                error: function (err) {
-                    console.error(err);
-                }
-            })
-        }
-    </script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
-*@

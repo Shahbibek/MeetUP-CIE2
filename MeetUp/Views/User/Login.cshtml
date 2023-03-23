@@ -1,11 +1,11 @@
-﻿@model MeetUp.Models.Users;
+﻿@model MeetUp.Models.Login;
 @{
     Layout = null;
 }
 
 <!DOCTYPE html>
-<html5>
-        <head>
+<html>
+    <head>
         <title>Login</title>
         <link href="https://fonts.googleapis.com/css?family=Fruktur&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet" />
@@ -24,6 +24,7 @@
                 <img src="~/img/corner.png">S
             </div>
             <div class="container">
+                @Html.Raw(@ViewBag.Error)
                 <div class="banner">
                     <div class="heading_txt">
                         <span class="txt_get_your">Get your </span>
@@ -33,7 +34,7 @@
                     <div class="img_box"></div>
                 </div>
                 <div class="form_box">
-                    <form class="input_form" id="MyForm">
+                <form class="input_form" id="MyForm" asp-action="GetLogin" asp-controller="User">
                         <div class="intro">
                             <span class="form_heading">Login</span>
                             <p class="form_desc">
@@ -44,13 +45,13 @@
                         <div class="input_box">
                             @Html.TextBoxFor(m => m.email, new { @class = "input_email", @type="email", @placeholder = "Please Enter Email", @required = "required"});
                             <div class="error_text">
-                                
+                                <span asp-validation-for="email" style="color:red"></span>
                             </div>
                         </div>
                         <div class="input_box">
                             @Html.TextBoxFor(m => m.password, new { @class = "input_password", @type="password", @placeholder = "Please Enter Password", @required = "required"});
                             <div class="error_text">
-                                
+                                <span asp-validation-for="password" style="color:red"></span>
                             </div>
                         </div>
                         <div class="uppr_footer">
@@ -59,7 +60,7 @@
                             <a class="forgot_pass" href="@Url.Action("ForgetPassword", "User")">Forgot Password ?</a>
                         </div>
                         <div class="btn_box">
-                            <button class="login_btn" id="booking_btn">Login</button>
+                            <button class="login_btn" type="submit">Login</button>
                         </div>
                         <div class="footer_link">
                             <a class="new_account" href="@Url.Action("Register","User")"> Create new account ?</a>
@@ -70,3 +71,9 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
     </body>
+</html>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
