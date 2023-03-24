@@ -162,16 +162,15 @@
                         @foreach (var item in Model.GetChatDetails)
                         {
                             <div class="modal-body">
+                                <div class="container12 darker12">
+                                    <img src="https://avatars.githubusercontent.com/u/94640470?v=4" alt="logo" class="right">
+                                    <p>@item.request</p>
+                                    <span class="time-left">@item.createdAt</span>
+                                </div>
                                 <div class="container12">
                                     <img src="https://res.cloudinary.com/ddhtmkllj/image/upload/v1677251023/samples/About%20Us/bibek_sah_unbavx.jpg" alt="logo">
-                                    <p>@item.request</p>
-                                    <span class="time-right">@item.createdAt</span>
-                                </div>
-
-                                <div class="container12 darker12">
-                                    <img src="https://wallpapercave.com/wp/wp6798745.jpg" alt="logo" class="right">
                                     <p>@item.message</p>
-                                    <span class="time-left">@item.createdAt</span>
+                                    <span class="time-right">@item.createdAt</span>
                                 </div>
                             </div>
                         }
