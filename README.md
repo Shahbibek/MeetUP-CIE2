@@ -91,7 +91,7 @@ system's overall performance.
 ![image](https://github.com/Shahbibek/MeetUP-CIE2/assets/84366074/d55dd46f-7530-4124-ae0c-f70ef2b76ced)
 
 
-<h2>For More Details of the project Please follow the Link: **https://drive.google.com/file/d/1ShVDJfVJzV1N64G0o_azQigLddJX_lcg/view?usp=sharing**</h2>
+<h2>For More Details of the project Please follow the Link: https://drive.google.com/file/d/1ShVDJfVJzV1N64G0o_azQigLddJX_lcg/view?usp=sharing</h2>
 
 
 
